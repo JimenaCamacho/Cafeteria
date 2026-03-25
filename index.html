@@ -5,49 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bosque Café</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <header class="site-header">
     <div class="header-inner">
-      <div class="logo">Bosque Café</div>
+      <div class="logo">
+        <span class="logo-icon">✦</span> Bosque Café
+      </div>
       <nav class="main-nav">
         <a href="#menu">Menú</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#ubicacion">Ubicación</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#contacto" class="nav-cta">Visítanos</a>
       </nav>
     </div>
   </header>
 
   <section class="hero" id="inicio">
     <div class="hero-inner">
-      <p class="hero-tag">Café de especialidad</p>
-      <h1 class="hero-title">Lorem ipsum dolor sit amet</h1>
-      <p class="hero-sub">Placeholder texto descriptivo de la cafetería. Aquí irá la propuesta de valor principal del negocio.</p>
-      <a href="#menu" class="btn btn-primary">Ver menú</a>
-      <a href="#nosotros" class="btn btn-ghost">Conocernos</a>
+      <p class="hero-tag">Café de especialidad · CDMX</p>
+      <h1 class="hero-title">Donde cada taza<br /><em>cuenta una historia</em></h1>
+      <p class="hero-sub">Granos de origen único, tostados con cuidado y preparados con pasión. Un refugio cálido en el corazón de la ciudad.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Ver menú</a>
+        <a href="#nosotros" class="btn btn-ghost">Nuestra historia</a>
+      </div>
     </div>
   </section>
 
   <section class="section features-section">
     <div class="container">
-      <h2 class="section-title">¿Por qué elegirnos?</h2>
+      <h2 class="section-title">Por qué Bosque</h2>
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon">☕</div>
-          <h3 class="feature-title">Placeholder título</h3>
-          <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+          <h3 class="feature-title">Origen único</h3>
+          <p class="feature-desc">Trabajamos directamente con productores de Oaxaca, Chiapas y Veracruz para traerte los mejores granos de la temporada.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🌿</div>
-          <h3 class="feature-title">Placeholder título</h3>
-          <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+          <h3 class="feature-title">Sustentable</h3>
+          <p class="feature-desc">Vasos reutilizables, empaque biodegradable y prácticas responsables en toda nuestra cadena de suministro.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">📍</div>
-          <h3 class="feature-title">Placeholder título</h3>
-          <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+          <div class="feature-icon">🏡</div>
+          <h3 class="feature-title">Espacio propio</h3>
+          <p class="feature-desc">Un lugar para trabajar, leer, charlar o simplemente desconectar. Wifi de alta velocidad y ambiente sin prisas.</p>
         </div>
       </div>
     </div>
@@ -63,24 +70,31 @@
           <ul class="menu-list">
             <li class="menu-item">
               <div class="item-info">
-                <span class="item-name">Placeholder bebida 1</span>
-                <span class="item-desc">Descripción corta del producto aquí</span>
+                <span class="item-name">Espresso Bosque</span>
+                <span class="item-desc">Blend de origen, intenso y equilibrado</span>
               </div>
-              <span class="item-price">$00</span>
+              <span class="item-price">$55</span>
             </li>
             <li class="menu-item">
               <div class="item-info">
-                <span class="item-name">Placeholder bebida 2</span>
-                <span class="item-desc">Descripción corta del producto aquí</span>
+                <span class="item-name">Latte de vainilla</span>
+                <span class="item-desc">Espresso doble, leche vaporizada, vainilla natural</span>
               </div>
-              <span class="item-price">$00</span>
+              <span class="item-price">$75</span>
             </li>
             <li class="menu-item">
               <div class="item-info">
-                <span class="item-name">Placeholder bebida 3</span>
-                <span class="item-desc">Descripción corta del producto aquí</span>
+                <span class="item-name">Cappuccino clásico</span>
+                <span class="item-desc">Espresso, leche espumada en partes iguales</span>
               </div>
-              <span class="item-price">$00</span>
+              <span class="item-price">$68</span>
+            </li>
+            <li class="menu-item">
+              <div class="item-info">
+                <span class="item-name">Cortado de miel</span>
+                <span class="item-desc">Espresso con leche caliente y miel de abeja</span>
+              </div>
+              <span class="item-price">$65</span>
             </li>
           </ul>
         </div>
@@ -89,24 +103,31 @@
           <ul class="menu-list">
             <li class="menu-item">
               <div class="item-info">
-                <span class="item-name">Placeholder bebida 4</span>
-                <span class="item-desc">Descripción corta del producto aquí</span>
+                <span class="item-name">Cold Brew</span>
+                <span class="item-desc">Infusión 20h en frío, suave y chocolatosa</span>
               </div>
-              <span class="item-price">$00</span>
+              <span class="item-price">$80</span>
             </li>
             <li class="menu-item">
               <div class="item-info">
-                <span class="item-name">Placeholder bebida 5</span>
-                <span class="item-desc">Descripción corta del producto aquí</span>
+                <span class="item-name">Matcha latte helado</span>
+                <span class="item-desc">Matcha ceremonial, leche de avena, hielo</span>
               </div>
-              <span class="item-price">$00</span>
+              <span class="item-price">$85</span>
             </li>
             <li class="menu-item">
               <div class="item-info">
-                <span class="item-name">Placeholder bebida 6</span>
-                <span class="item-desc">Descripción corta del producto aquí</span>
+                <span class="item-name">Espresso tónico</span>
+                <span class="item-desc">Espresso sobre agua tónica y cítricos</span>
               </div>
-              <span class="item-price">$00</span>
+              <span class="item-price">$78</span>
+            </li>
+            <li class="menu-item">
+              <div class="item-info">
+                <span class="item-name">Frappe de caramelo</span>
+                <span class="item-desc">Espresso, leche, hielo y caramelo artesanal</span>
+              </div>
+              <span class="item-price">$90</span>
             </li>
           </ul>
         </div>
@@ -115,24 +136,31 @@
           <ul class="menu-list">
             <li class="menu-item">
               <div class="item-info">
-                <span class="item-name">Placeholder comida 1</span>
-                <span class="item-desc">Descripción corta del producto aquí</span>
+                <span class="item-name">Croissant de mantequilla</span>
+                <span class="item-desc">Hojaldrado, recién horneado cada mañana</span>
               </div>
-              <span class="item-price">$00</span>
+              <span class="item-price">$55</span>
             </li>
             <li class="menu-item">
               <div class="item-info">
-                <span class="item-name">Placeholder comida 2</span>
-                <span class="item-desc">Descripción corta del producto aquí</span>
+                <span class="item-name">Avocado toast</span>
+                <span class="item-desc">Pan de masa madre, aguacate, semillas</span>
               </div>
-              <span class="item-price">$00</span>
+              <span class="item-price">$95</span>
             </li>
             <li class="menu-item">
               <div class="item-info">
-                <span class="item-name">Placeholder comida 3</span>
-                <span class="item-desc">Descripción corta del producto aquí</span>
+                <span class="item-name">Muffin de arándano</span>
+                <span class="item-desc">Sin gluten, hecho en casa, con arándanos frescos</span>
               </div>
-              <span class="item-price">$00</span>
+              <span class="item-price">$48</span>
+            </li>
+            <li class="menu-item">
+              <div class="item-info">
+                <span class="item-name">Bowl de granola</span>
+                <span class="item-desc">Granola artesanal, yogurt griego, fruta de temporada</span>
+              </div>
+              <span class="item-price">$88</span>
             </li>
           </ul>
         </div>
@@ -143,14 +171,15 @@
   <section class="section about-section" id="nosotros">
     <div class="container">
       <p class="section-tag">Nuestra historia</p>
-      <h2 class="section-title">Sobre Bosque</h2>
+      <h2 class="section-title">Nacimos del bosque</h2>
       <div class="about-grid">
         <div class="about-image-placeholder">
-          <span>Imagen del local</span>
+          <span>Interior de Bosque Café</span>
         </div>
         <div class="about-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          <p>Bosque nació en 2019 con una sola idea: crear un espacio donde el café de especialidad fuera el protagonista, no el pretexto. Empezamos con una barra pequeña en la Colonia Roma y hoy somos un lugar de encuentro para amantes del café, creativos y personas que valoran las cosas bien hechas.</p>
+          <p>Nuestros baristas se capacitan en origen: visitan las fincas, conocen a los productores y entienden cada grano antes de servirlo. Esa conexión se siente en cada taza.</p>
+          <a href="#ubicacion" class="btn btn-primary">Encuéntranos</a>
         </div>
       </div>
     </div>
@@ -163,9 +192,9 @@
       <div class="location-grid">
         <div class="location-card">
           <h3 class="location-card-title">Dirección</h3>
-          <p>Placeholder calle, número</p>
-          <p>Colonia Placeholder</p>
-          <p>Ciudad de México</p>
+          <p>Orizaba 42, Roma Norte</p>
+          <p>Cuauhtémoc, CDMX</p>
+          <p>C.P. 06700</p>
         </div>
         <div class="location-card">
           <h3 class="location-card-title">Horarios</h3>
@@ -176,16 +205,24 @@
         <div class="location-card">
           <h3 class="location-card-title">Contacto</h3>
           <p>hola@bosquecafe.mx</p>
-          <p>+52 55 0000 0000</p>
-          <p>@bosquecafe</p>
+          <p>+52 55 1234 5678</p>
+          <p>@bosquecafemx</p>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="site-footer">
+  <footer class="site-footer" id="contacto">
     <div class="footer-inner">
-      <span class="footer-logo">Bosque Café</span>
+      <div class="footer-brand">
+        <span class="footer-logo"><span class="logo-icon">✦</span> Bosque Café</span>
+        <p class="footer-tagline">Café de especialidad · Roma Norte, CDMX</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#menu">Menú</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#ubicacion">Ubicación</a>
+      </nav>
       <p class="footer-copy">© 2025 Bosque Café · Todos los derechos reservados</p>
     </div>
   </footer>
